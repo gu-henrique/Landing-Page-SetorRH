@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RH Tech</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.png">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+   integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+     <!--  NAVBAR  -->
+    <header>
+        <!--  NAVBAR  -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">RHTECH</a>
+                
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarCollapse" 
+                    aria-controls="navbarCollapse" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Para Empresas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Busca de Vaga</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./login.html">Entrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./cadastro.html">Cadastre seu CV</a>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- BANNER PRINCIPAL -->
+    <section id="bannerPrincipal" class="position-relative d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 aos-animate"
+                data-aos="fade-up data-aos-dalay="200">
+                    <h1>Chegue na frente!!</h1>
+                    <h2>Com o seu currículo cadastrado você estará no radar dos recrutadores</h2>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="./cadastro.html" class="btn-get-started scrollto">Cadastre seu Currículo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--  CORPO DO SITE  -->
+    <main id="principal">
+        <!-- DICAS -->
+        <section id="dicas" class="dicas">
+            <div class="container">
+                <div class="section-titulo">
+                    <div class="col col-lg justify-content-center ">
+                        <h2>Veja os passos para sua primeira entrevista de emprego!</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="icon-box "> 
+                            <div class="icon">
+                                <img src="./assets/img/alvo_300x300.png" alt="">
+                            </div>
+                            <h4>Faça seu registro.</h4>
+                            <p>Pouco meno de 5 minutos, você cria a sua conta em nosso site</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                        <div class="icon-box "> 
+                            <div class="icon">
+                                <img class="formulario" src="./assets/img/formulario_300x300.png" alt="">
+                            </div>
+                            <h4>Momento do Currículo</h4>
+                            <p>Cadastre seu currículo o mais completo possivel para serem exibidos para as empresas </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                        <div class="icon-box "> 
+                            <div class="icon">
+                                <img src="./assets/img/contratoassinado_300x300.png" alt="">
+                            </div>
+                            <h4>Candidate-se</h4>
+                            <p>Busque as melhores vagas no seu perfil e candidate-se!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <!-- SOBRE -->
+        <section id="sobre">
+            <div class="container">
+                <div class="section-titulo">
+                    <div class="col col-lg justify-content-center ">
+                        <h2>Sobre</h2>
+                        <p>
+                            Pioneira em seu segmento, a RHTECH é uma empresa de tecnologia que funciona como um classificado online de currículos e vagas com diversas ferramentas e soluções de recrutamento que ajudam nossos clientes na carreira e no mercado de trabalho.
+                        </p>
+                        <p>
+                            Mais do que ser um classificado online de empregos, a gente sabe que exerce um papel importante na sociedade. Temos mais de 7 milhões de currículos cadastrados, sendo 4 mil novos currículos por dia. Temos a maior base de candidatos PcD com laudos validados do país e esses profissionais podem assinar a RHTECH de forma totalmente gratuita. As pessoas nos procuram com a esperança de conseguirem um trabalho, e a gente trabalha para ajudar essas pessoas a se realizarem profissionalmente, as empresas a serem mais produtivas e o Brasil a prosperar. Essa é a nossa missão. E, para cumprir essa missão com excelência, nós temos o “Nosso Jeito” de fazer as coisas por aqui. São seis atributos que guiam o comportamento dos nossos colaboradores e formam o “Nosso Jeito”.
+                        </p>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <!-- RODAPE -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">© 2021 RH TECH Group, Inc</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#sobre" class="nav-link px-2 text-muted">Sobre Nós</a></li>
+            <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">SAQ</a></li>
+            <li class="nav-item"><a href="./cadastro.html" class="nav-link px-2 text-muted">Trabalhe conosco</a></li>
+          </ul>
+        </footer>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+      
+</body>
+</html>

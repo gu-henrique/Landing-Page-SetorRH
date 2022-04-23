@@ -1,0 +1,109 @@
+body{
+    margin: 0px;
+    background-color: #ecedf1;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+/*------------------------------------------
+#BANNER INICIO
+------------------------------------------*/
+#bannerPrincipal {
+    width: 100%;
+    height: 91vh;
+    background: url("./assets/img/banner_1.jpg") top center;
+    background-size:cover; 
+    background-position: 0px 30px;
+    margin-bottom: -200px;
+        
+}
+
+@media(min-width: 1024px){
+    #bannerPrincipal{
+        background-attachment: fixed;
+    }
+}
+@media(max-width: 992px){
+    #bannerPrincipal{
+       margin-bottom: 0;
+       height: 100vh;
+    }
+    #bannerPrincipal .container{
+        padding-bottom: 63px;
+    }
+    #bannerPrincipal h1{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #bannerPrincipal h2{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-height:600px){
+    #bannerPrincipal{
+        height: 110vh;
+    }
+}
+
+/*------------------------------------------
+#BANNER FIM
+------------------------------------------*/
+
+
+/*------------------------------------------
+#DICAS INICIO
+------------------------------------------*/
+
+.dicas{
+    padding-top: 180px;
+}
+
+.dicas .icon-box{
+    text-align: center;
+    padding: 15px 20px;
+    transition: all ease-in-out 0,3s;
+ }
+
+.dicas .icon-box .icon img{
+    width: 200px;
+
+}
+.dicas .icon-box .icon .formulario{
+    padding-bottom: 45px;
+}
+
+
+
+.btn-get-started {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 35px;
+    margin-top: 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #1977cc;
+}
+.section-titulo{
+    text-align: center;
+    padding-top: 60px;
+}
+.textDicas{
+    text-align: center;
+    padding: 20px;
+}
+
+.tituloform{
+    padding-top: 4rem ;
+    padding-bottom: 4rem ;
+}

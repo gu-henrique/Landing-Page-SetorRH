@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RH Tech</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.png">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+   integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!--  NAVBAR  -->
+    <header>
+        <!--  NAVBAR  -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">RHTECH</a>                
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarCollapse" 
+                    aria-controls="navbarCollapse" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--<div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Para Empresas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Busca de Vaga</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./login.html">Entrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre">Sobre</a>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>-->
+            </div>
+        </nav>
+    </header>
+    <div class="container ">
+        <main>
+            <div class="tituloform text-center">
+                <h2>Cadastre seu Currículo</h2>
+            </div>
+            <div class="row g-5">
+                <div class="col-md">
+                    <form action="" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="firstName" placeholder value required>
+                                <div class="invalid-feedback">
+                                    Nome válido obrigatorio!
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Sobrenome</label>
+                                <input type="text" class="form-control" id="lastName" placeholder value required>
+                                <div class="invalid-feedback">
+                                    Sobrenome válido obrigatorio!
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="username" class="form-label">Usuário</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                    <div class="invalid-feedback"> Seu usuário é obrigatório</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="seu@exemplo.com">
+                                <div class="invalid-feedback">
+                                    Email válido obrigatorio!
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label for="password" class="form-label">Senha</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="password" name="password">
+                                    <img id="olho" type="button" class="input-group-text" onclick="mostrarSenha()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDUlEQVQ4jd2SvW3DMBBGbwQVKlyo4BGC4FKFS4+TATKCNxAggkeoSpHSRQbwAB7AA7hQoUKFLH6E2qQQHfgHdpo0yQHX8T3exyPR/ytlQ8kOhgV7FvSx9+xglA3lM3DBgh0LPn/onbJhcQ0bv2SHlgVgQa/suFHVkCg7bm5gzB2OyvjlDFdDcoa19etZMN8Qp7oUDPEM2KFV1ZAQO2zPMBERO7Ra4JQNpRa4K4FDS0R0IdneCbQLb4/zh/c7QdH4NL40tPXrovFpjHQr6PJ6yr5hQV80PiUiIm1OKxZ0LICS8TWvpyyOf2DBQQtcXk8Zi3+JcKfNafVsjZ0WfGgJlZZQxZjdwzX+ykf6u/UF0Fwo5Apfcq8AAAAASUVORK5CYII="/>
+                            </div>
+                               
+                            </div>
+
+                            <div class="col-12">
+                                <label for="endereco" class="form-label">Endereço 1</label>
+                                <input type="text" class="form-control" id="endereco" placeholder="Rua R2D2">
+                                <div class="invalid-feedback">
+                                Por favor, digite seu endereço.
+                                </div> 
+                            </div>
+                            <div class="col-12">
+                                <label for="endereco2" class="form-label">Endereço 2</label>
+                                <input type="text" class="form-control" id="endereco2" placeholder="Apto 01">
+                                <div class="invalid-feedback">
+                                Por favor, digite seu endereço.
+                                </div> 
+                            </div>
+                            <div class="col-md-5">
+                                <label for="pais" class="form-label">País</label>
+                                <select class="form-select" id="pais" required>
+                                    <option value="">Selecione...</option>
+                                    <option>Brasil</option>
+                                    
+                                </select>                                                             
+                            </div>
+                            <div class="col-md-4">
+                                <label for="uf" class="form-label">UF</label>
+                                <select class="form-select" id="uf" required>
+                                    <option value="">Selecione...</option>
+                                    <option>MG </option>
+                                    <option>SP</option>
+                                    <option>ES</option>
+                                    <option>RJ</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Selecione uma UF.
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <label for="cep" class="form-label">CEP</label>
+                                <input type="text" class="form-control" id="cep" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Favor insira o CEP.
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="col-6">
+                            <label for="formFile" class="form-label">Importe seu Currículo</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                        <hr class="my-4">
+                        <button class="w-100 btn btn-primary btn-lg" type="submit" onclick="envioCadastro()">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+     <!-- RODAPE -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">© 2021 RH TECH Group, Inc</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#sobre" class="nav-link px-2 text-muted">Sobre Nós</a></li>
+            <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">SAQ</a></li>
+            <li class="nav-item"><a href="./cadastro.html" class="nav-link px-2 text-muted">Trabalhe conosco</a></li>
+          </ul>
+        </footer>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="./main.js"></script> 
+    
+</body>
+</html>
